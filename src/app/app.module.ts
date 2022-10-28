@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import { DashComponent } from './dash/dash.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddemployeeComponent } from './addemployee/addemployee.component';
 
 const appRoutes:Routes=[
 {
@@ -17,7 +18,11 @@ const appRoutes:Routes=[
 },
 {
   path:"adminDashbord",component:DashComponent
+},
+{
+  path:"addEmp",component:AddemployeeComponent
 }
+
 
 ]
 
@@ -27,7 +32,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     AdminloginComponent,
     AdminnavbarComponent,
-    DashComponent
+    DashComponent,
+    AddemployeeComponent
   ],
   imports: [
     BrowserModule,
