@@ -8,6 +8,8 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
+  addEmployee=(data:any)=>{
+    return this.http.post("http://localhost:8080/empAdd",data)
+  }
 
-  
 }
