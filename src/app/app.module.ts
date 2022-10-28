@@ -15,7 +15,7 @@ const appRoutes:Routes=[
   path:"",component:AdminloginComponent
 },
 {
-  path:"",component:AdminnavbarComponent
+  path:"adminDash",component:DashComponent
 }
 
 ]
