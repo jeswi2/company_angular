@@ -11,6 +11,7 @@ import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import { DashComponent } from './dash/dash.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
+import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
 
 const appRoutes:Routes=[
 {
@@ -33,7 +34,8 @@ const appRoutes:Routes=[
     AdminloginComponent,
     AdminnavbarComponent,
     DashComponent,
-    AddemployeeComponent
+    AddemployeeComponent,
+    EmployeeloginComponent
   ],
   imports: [
     BrowserModule,
