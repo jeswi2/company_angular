@@ -26,10 +26,10 @@ readValues=()=>{
     this.myrouter.navigate(["/adminDashbord"])
   }
   else{
-    alert("in valid")
+    alert("Invalid Credentials")
   }
   console.log(data)
-  alert("Sucess")
+  alert("Success")
 }
 
   ngOnInit(): void {
