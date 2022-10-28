@@ -7,18 +7,24 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormsModule } from '@angular/forms';
+import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 
 const appRoutes:Routes=[
 {
   path:"",component:AdminloginComponent
+},
+{
+  path:"",component:AdminnavbarComponent
 }
+
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    AdminnavbarComponent
   ],
   imports: [
     BrowserModule,
