@@ -9,13 +9,14 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormsModule } from '@angular/forms';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import { DashComponent } from './dash/dash.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes:Routes=[
 {
   path:"",component:AdminloginComponent
 },
 {
-  path:"adminDash",component:DashComponent
+  path:"adminDashbord",component:DashComponent
 }
 
 ]
@@ -32,7 +33,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],
