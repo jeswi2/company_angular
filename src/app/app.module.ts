@@ -5,20 +5,26 @@ import { Route, RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes:Routes=[
-
+{
+  path:"",component:AdminloginComponent
+}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminloginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
 
   ],
   providers: [],
