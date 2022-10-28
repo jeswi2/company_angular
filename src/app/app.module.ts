@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormsModule } from '@angular/forms';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
+import { DashComponent } from './dash/dash.component';
 
 const appRoutes:Routes=[
 {
@@ -24,7 +25,8 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     AdminloginComponent,
-    AdminnavbarComponent
+    AdminnavbarComponent,
+    DashComponent
   ],
   imports: [
     BrowserModule,
