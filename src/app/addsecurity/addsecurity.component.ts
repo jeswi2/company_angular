@@ -31,7 +31,7 @@ export class AddsecurityComponent implements OnInit {
   "password":this.password
     }
     console.log(data)
-    this.myapi.secuAdd(data).subscribe(
+    this.myapi.secuadd(data).subscribe(
       (resp)=>{
         alert ("successfully added")
         

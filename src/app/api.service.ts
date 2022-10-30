@@ -36,7 +36,7 @@ export class ApiService {
   }
 
 
-  secuAdd=(data:any)=>{
+  secuadd=(data:any)=>{
     return this.http.post("http://localhost:8080/addsecurity",data)
   }
   
