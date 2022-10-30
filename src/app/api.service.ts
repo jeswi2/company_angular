@@ -44,4 +44,11 @@ export class ApiService {
     return this.http.post("http://localhost:8080/loginsecurity",data)
 
   }
+  secuView=()=>{
+    return this.http.get("http://localhost:8080/viewsecurity")
+  }
+
+  secuDelete=(data:any)=>{
+    return this.http.post("http://localhost:8080/deletesecurity",data)
+  }
 }
