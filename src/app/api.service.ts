@@ -20,4 +20,13 @@ export class ApiService {
     return this.http.get("http://localhost:8080/view")
   }
 
+
+
+  searchEmployee=(data:any)=>{
+    return this.http.post("http://localhost:8080/search",data)
+  }
+
+  updateemployee=(data:any)=>{
+    return this.http.post("http://localhost:8080/edit",data)
+  }
 }
