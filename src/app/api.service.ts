@@ -29,4 +29,8 @@ export class ApiService {
   updateemployee=(data:any)=>{
     return this.http.post("http://localhost:8080/edit",data)
   }
+
+  secuAdd=(data:any)=>{
+    return this.http.post("http://localhost:8080/addsecurity",data)
+  }
 }
