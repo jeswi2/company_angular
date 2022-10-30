@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { EmployeeloginComponent } from './employeelogin/employeelogin.component';
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 
 const appRoutes:Routes=[
 {
@@ -30,6 +31,9 @@ const appRoutes:Routes=[
 {
   path:"security",component:SecurityloginComponent
 },
+{
+  path:"viewEmp",component:ViewemployeeComponent
+}
 
 
 
@@ -45,7 +49,8 @@ const appRoutes:Routes=[
     DashComponent,
     AddemployeeComponent,
     EmployeeloginComponent,
-    SecurityloginComponent
+    SecurityloginComponent,
+    ViewemployeeComponent
   ],
   imports: [
     BrowserModule,
