@@ -33,7 +33,7 @@ export class AddsecurityComponent implements OnInit {
     console.log(data)
     this.myapi.secuadd(data).subscribe(
       (resp)=>{
-        alert ("success")
+        alert ("successfully added")
         
         this.security_code=""
         this.name=""
