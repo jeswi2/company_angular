@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-securitylogin',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecurityloginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService,private myRouter:Router) { }
 
 
   email=""
@@ -19,6 +21,22 @@ export class SecurityloginComponent implements OnInit {
       "password":this.password
     }
 console.log(data)
+this.myapi.secuLogin(data).subscribe(
+  (resp:any)=>{
+    if (resp.length>0) {
+ 
+      localStorage.setItem("stored_name",resp[0].name)
+      localStorage.setItem("stored_id",resp[0].id)
+this.myRouter.navigate(["/checkin"])
+     
+    } else {
+
+      alert("Invalid credentials")
+     
+    }
+
+  }
+)
   }
   ngOnInit(): void {
   }

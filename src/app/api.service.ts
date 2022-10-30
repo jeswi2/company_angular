@@ -20,6 +20,13 @@ export class ApiService {
     return this.http.get("http://localhost:8080/view")
   }
 
+
+
+  empLogin=(data:any)=>{
+    return this.http.post("http://localhost:8080/emplogin",data)
+  }
+
+
   searchEmployee=(data:any)=>{
     return this.http.post("http://localhost:8080/search",data)
   }
@@ -28,7 +35,12 @@ export class ApiService {
     return this.http.post("http://localhost:8080/edit",data)
   }
 
+
   secuAdd=(data:any)=>{
     return this.http.post("http://localhost:8080/addsecurity",data)
+
+  secuLogin=(data:any)=>{
+    return this.http.post("http://localhost:8080/loginsecurity",data)
+
   }
 }
