@@ -51,4 +51,12 @@ export class ApiService {
   secuDelete=(data:any)=>{
     return this.http.post("http://localhost:8080/deletesecurity",data)
   }
+
+  secuSearch=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchsecurity",data)
+  }
+
+  secuEdit=(data:any)=>{
+    return this.http.post("http://localhost:8080/updatesecurity",data)
+  }
 }
