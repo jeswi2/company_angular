@@ -29,7 +29,7 @@ this.myapi.empLogin(data).subscribe(
  
       localStorage.setItem("stored_name",resp[0].name)
       localStorage.setItem("stored_id",resp[0].id)
-this.myRouter.navigate(["/applyleave"])
+this.myRouter.navigate(["/applyLeave"])
      
     } else {
 

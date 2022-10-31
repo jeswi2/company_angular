@@ -19,6 +19,7 @@ import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import { combineLatest } from 'rxjs';
+import { EmployeenavComponent } from './employeenav/employeenav.component';
 
 const appRoutes:Routes=[
 {
@@ -73,7 +74,8 @@ const appRoutes:Routes=[
     SearchemployeeComponent,
     AddsecurityComponent,
     ViewsecurityComponent,
-    SearchsecurityComponent
+    SearchsecurityComponent,
+    EmployeenavComponent
   ],
   imports: [
     BrowserModule,
