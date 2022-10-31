@@ -20,6 +20,7 @@ import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import { combineLatest } from 'rxjs';
 import { EmployeenavComponent } from './employeenav/employeenav.component';
+import { LeaveapplyComponent } from './leaveapply/leaveapply.component';
 
 const appRoutes:Routes=[
 {
@@ -51,6 +52,9 @@ const appRoutes:Routes=[
 },
 {
   path:"searchsec",component:SearchsecurityComponent
+},
+{
+  path:"applyLeave",component:LeaveapplyComponent
 }
 
 
@@ -75,7 +79,8 @@ const appRoutes:Routes=[
     AddsecurityComponent,
     ViewsecurityComponent,
     SearchsecurityComponent,
-    EmployeenavComponent
+    EmployeenavComponent,
+    LeaveapplyComponent
   ],
   imports: [
     BrowserModule,
