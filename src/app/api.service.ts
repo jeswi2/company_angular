@@ -67,4 +67,12 @@ export class ApiService {
   checkIn=(data:any)=>{
     return this.http.post("http://localhost:8080/checkIn",data)
   }
+
+  checkOut=(data:any)=>{
+    return this.http.post("http://localhost:8080/checkOut",data)
+  }
+
+  viewCheckIn=()=>{
+    return this.http.get("http://localhost:8080/viewCheckIn")
+  }
 }

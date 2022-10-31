@@ -23,6 +23,7 @@ import { EmployeenavComponent } from './employeenav/employeenav.component';
 import { LeaveapplyComponent } from './leaveapply/leaveapply.component';
 import { SecuritynavComponent } from './securitynav/securitynav.component';
 import { CheckinComponent } from './checkin/checkin.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const appRoutes:Routes=[
 {
@@ -60,6 +61,9 @@ const appRoutes:Routes=[
 },
 {
   path:"checkIn",component:CheckinComponent
+},
+{
+  path:"checkOut",component:CheckoutComponent
 }
 
 
@@ -87,7 +91,8 @@ const appRoutes:Routes=[
     EmployeenavComponent,
     LeaveapplyComponent,
     SecuritynavComponent,
-    CheckinComponent
+    CheckinComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
