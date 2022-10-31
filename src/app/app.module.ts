@@ -25,6 +25,7 @@ import { SecuritynavComponent } from './securitynav/securitynav.component';
 import { CheckinComponent } from './checkin/checkin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ViewlogComponent } from './viewlog/viewlog.component';
+import { ViewlogbyidComponent } from './viewlogbyid/viewlogbyid.component';
 
 const appRoutes:Routes=[
 {
@@ -68,6 +69,9 @@ const appRoutes:Routes=[
 },
 {
   path:"viewLogs",component:ViewlogComponent
+},
+{
+  path:"viewallLogs",component:ViewlogbyidComponent
 }
 
 
@@ -97,7 +101,8 @@ const appRoutes:Routes=[
     SecuritynavComponent,
     CheckinComponent,
     CheckoutComponent,
-    ViewlogComponent
+    ViewlogComponent,
+    ViewlogbyidComponent
   ],
   imports: [
     BrowserModule,
