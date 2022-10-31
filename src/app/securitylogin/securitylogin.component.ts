@@ -25,9 +25,10 @@ this.myapi.secuLogin(data).subscribe(
   (resp:any)=>{
     if (resp.length>0) {
  
-      localStorage.setItem("stored_name",resp[0].name)
-      localStorage.setItem("stored_id",resp[0].id)
-this.myRouter.navigate(["/checkin"])
+      localStorage.setItem("security_name",resp[0].name)
+      localStorage.setItem("security_code",resp[0].security_code)
+      console.log(localStorage.getItem("security_code"));
+this.myRouter.navigate(["/checkIn"])
      
     } else {
 
