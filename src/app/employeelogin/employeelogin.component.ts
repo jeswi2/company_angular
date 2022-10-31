@@ -27,8 +27,9 @@ this.myapi.empLogin(data).subscribe(
   (resp:any)=>{
     if (resp.length>0) {
  
-      localStorage.setItem("stored_name",resp[0].name)
-      localStorage.setItem("stored_id",resp[0].id)
+      localStorage.setItem("emp_code",resp[0].emp_code)
+      console.log(localStorage.getItem("emp_code"));
+      localStorage.setItem("empname",resp[0].name)
 this.myRouter.navigate(["/applyLeave"])
      
     } else {
