@@ -75,4 +75,8 @@ export class ApiService {
   viewCheckIn=()=>{
     return this.http.get("http://localhost:8080/viewCheckIn")
   }
+
+  viewLog=()=>{
+    return this.http.get("http://localhost:8080/viewAllLog")
+  }
 }

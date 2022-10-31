@@ -24,6 +24,7 @@ import { LeaveapplyComponent } from './leaveapply/leaveapply.component';
 import { SecuritynavComponent } from './securitynav/securitynav.component';
 import { CheckinComponent } from './checkin/checkin.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ViewlogComponent } from './viewlog/viewlog.component';
 
 const appRoutes:Routes=[
 {
@@ -64,6 +65,9 @@ const appRoutes:Routes=[
 },
 {
   path:"checkOut",component:CheckoutComponent
+},
+{
+  path:"viewLogs",component:ViewlogComponent
 }
 
 
@@ -92,7 +96,8 @@ const appRoutes:Routes=[
     LeaveapplyComponent,
     SecuritynavComponent,
     CheckinComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    ViewlogComponent
   ],
   imports: [
     BrowserModule,
