@@ -83,4 +83,8 @@ export class ApiService {
   viewLogById=(data:any)=>{
     return this.http.post("http://localhost:8080/viewLogById",data)
   }
+
+  viewLeaveById=(data:any)=>{
+    return this.http.post("http://localhost:8080/leaveappli",data)
+  }
 }
