@@ -22,6 +22,7 @@ import { combineLatest } from 'rxjs';
 import { EmployeenavComponent } from './employeenav/employeenav.component';
 import { LeaveapplyComponent } from './leaveapply/leaveapply.component';
 import { SecuritynavComponent } from './securitynav/securitynav.component';
+import { CheckinComponent } from './checkin/checkin.component';
 
 const appRoutes:Routes=[
 {
@@ -56,6 +57,9 @@ const appRoutes:Routes=[
 },
 {
   path:"applyLeave",component:LeaveapplyComponent
+},
+{
+  path:"checkIn",component:CheckinComponent
 }
 
 
@@ -82,7 +86,8 @@ const appRoutes:Routes=[
     SearchsecurityComponent,
     EmployeenavComponent,
     LeaveapplyComponent,
-    SecuritynavComponent
+    SecuritynavComponent,
+    CheckinComponent
   ],
   imports: [
     BrowserModule,

@@ -63,4 +63,8 @@ export class ApiService {
   applyLeave=(data:any)=>{
     return this.http.post("http://localhost:8080/leaveAdd",data)
   }
+
+  checkIn=(data:any)=>{
+    return this.http.post("http://localhost:8080/checkIn",data)
+  }
 }
